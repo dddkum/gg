@@ -1,4 +1,5 @@
 /node_modules/
+/bundle/
 /.idea/gg.iml
 /.idea/jsLibraryMappings.xml
 /.idea/modules.xml

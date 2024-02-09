@@ -1,1 +1,6 @@
 /node_modules/
+/.idea/gg.iml
+/.idea/jsLibraryMappings.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/.gitignore

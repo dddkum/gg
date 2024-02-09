@@ -4,14 +4,27 @@ export function buildLoaders(): webpack.RuleSetRule[] {
 // без typescript нужно установить babel-loader
 // ts-loader умеет в .tsx
     const tsLoader = {
-            test: /\.tsx?$/,
-            use: 'ts-loader',
-            exclude: /node_modules/,
-        }
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+    }
+
+    const cssLoaders = {
+        test: /\.s[ac]ss$/i,
+        use: [
+            // Creates `style` nodes from JS strings
+            "style-loader",
+            // Translates CSS into CommonJS
+            "css-loader",
+            // Compiles Sass to CSS
+            "sass-loader",
+        ],
+    }
 
     return (
         [
             tsLoader,
+            cssLoaders,
         ]
     )
 }

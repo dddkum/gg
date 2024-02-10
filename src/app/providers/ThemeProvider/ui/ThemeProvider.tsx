@@ -1,6 +1,6 @@
-import {LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext} from "./ThemeContext";
+import {LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext} from "../lib/ThemeContext";
 import {FC, useMemo, useState} from "react";
-import {Props} from "../types";
+import {Props} from "app/types/types";
 
 const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.BASE
 

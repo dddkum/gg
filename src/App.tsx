@@ -1,5 +1,5 @@
 import {Suspense} from 'react';
-import './index.scss'
+import './styles/index.scss'
 import {Link, Outlet, Route, Routes} from "react-router-dom";
 import {MainPageLazy} from "./pages/MainPage/MainPage.lazy";
 import {AboutPageLazy} from "./pages/About/AboutPage.lazy";
